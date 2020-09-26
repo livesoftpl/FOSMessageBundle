@@ -1,5 +1,5 @@
 {
-    "name": "qulac/message-bundle",
+    "name": "qulac/message-bundle-sf5",
     "type": "symfony-bundle",
     "description": "Provides user-to-user messaging features for your Symfony application.",
     "keywords": ["symfony", "message", "messaging"],
