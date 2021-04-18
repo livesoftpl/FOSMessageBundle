@@ -5,12 +5,15 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
+        <service id="fos_user.user_to_username_transformer" class="FOS\MessageBundle\Tests\Functional\Form\UserToUsernameTransformer" public="false" />
 
         <service id="fos_message.new_thread_form.type.default" class="FOS\MessageBundle\FormType\NewThreadMessageFormType" public="false" />
+        <service id="fos_message.new_thread_form.type" class="FOS\MessageBundle\FormType\NewThreadMessageFormType" public="false" />
 
         <service id="fos_message.new_thread_multiple_form.type" class="FOS\MessageBundle\FormType\NewThreadMultipleMessageFormType" public="false" />
 
         <service id="fos_message.reply_form.type.default" class="FOS\MessageBundle\FormType\ReplyMessageFormType" public="false" />
+        <service id="fos_message.reply_form.type" class="FOS\MessageBundle\FormType\ReplyMessageFormType" public="false" />
 
         <service id="fos_message.new_thread_form.factory.default" class="FOS\MessageBundle\FormFactory\NewThreadMessageFormFactory" public="false">
             <argument type="service" id="form.factory" />
